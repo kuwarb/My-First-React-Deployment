@@ -1,9 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
 
-  const [data, setData] = useEffect([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch('https://my-first-backend-deployment.onrender.com/users')
